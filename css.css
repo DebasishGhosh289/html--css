@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: black;
+    margin: 0px;
    
   }
   /* code for navbar */
@@ -19,16 +20,11 @@ body {
     position: sticky;
     top: 0;
     border-radius: 12px;
+    
 }
 
-@media (max-width: 640px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    height: fit-content;
-  }
-}
+
+
 
 .navbar a {
     float: left;
@@ -52,7 +48,38 @@ body {
   .navbar h1 {
     padding: 14px 24px;
   }
+  @media (max-width: 769px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      height: fit-content;
+      font-size: 30%;
+    }
+  }
+  
+  @media (max-width: 769px) {
+    .nav-links {
+      width: 30%;
+      font-size: 30%;
+     
+    }
+  }
+
+
+  @media (max-width: 769px) {
+    .navbar a {
+      font-size: 8px;
+      
+     
+    }
+  }
+
+
   /*code for intro*/
+  
+  
+  
   .intro {
     
     border:1px solid black;
@@ -69,20 +96,58 @@ body {
     border: 2px solid #00ff00;
   border-radius: 12px;
   padding: 5px;
-  
+  width: fit-content;
   background-color: #000000;
    
   }
 
+
+  @media (max-width: 769px) {
+    .intro h1 {
+     font-size: 80%;
+     
+    }
+  }
 /* code for mobile category*/
 .mobcat h1 {
   border: 2px solid #ffffff;
   border-radius: 12px;
   padding: 5px;
-  
+  width: fit-content;
   background-color: #000000;
   
 }
+
+@media (max-width: 769px) {
+  .mobcat h1 {
+   font-size: 80%;
+   
+  }
+}
+
+@media (max-width: 769px) {
+  .highlights h2 {
+   font-size: 80%;
+   
+  }
+}
+
+@media (max-width: 769px) {
+  .highlights ul {
+   font-size: 80%;
+   
+  }
+}
+
+@media (max-width: 769px) {
+  .highlights a {
+   font-size: 30%;
+   
+   
+  }
+}
+
+
 .mobcat_image1{
   
   border: 2px solid #990000;
@@ -91,6 +156,7 @@ body {
   background-color: #250404;
  
 }
+
 
 
 .mobcat_image2{
@@ -118,10 +184,17 @@ body {
  width: 50%;
   align-items: center;
   justify-content: space-between;
-
+  
   
 }
-
+@media (max-width: 769px) {
+  .highlights {
+   width: 63%;
+   
+   
+   
+  }
+}
 .cap {
   font-size: 45px;
   
@@ -195,14 +268,21 @@ input[type=submit]:hover {
   color: #ffffff;
   
 }
-
+/*code for about us*/
 .about_us{
   
   border: 2px solid #b901aa;
   border-radius: 12px; 
   padding: 5px;
   background-color: #360020;
-  height: 200px;
+  height: 300px;
   color: #ffffff;
  
+}
+
+@media (max-width: 769px) {
+  .about_us {
+   font-size: 80%;
+   
+  }
 }
